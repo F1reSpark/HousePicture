@@ -5,6 +5,9 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Square sky;
+
+    private Square ground;
     private boolean drawn;
 
     /**
@@ -17,6 +20,9 @@ public class Picture
         window = new Square();
         roof = new Triangle();
         sun = new Circle();
+        sky = new Square();
+        ground = new Square();
+
 
         drawn = false;
     }
@@ -32,22 +38,37 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
+            sky.changeColor("blue");
+            sky.moveHorizontal(-350);
+            sky.moveVertical(-150);
+            sky.changeSize(1200);
+            sky.makeVisible();
+
+            ground.changeColor("black");
+            ground.moveHorizontal(-350);
+            ground.moveVertical(140);
+            ground.changeSize(1200);
+            ground.makeVisible();
+
+            wall1.changeColor("offwhite");
             wall1.moveHorizontal(-140);
             wall1.moveVertical(20);
             wall1.changeSize(120);
             wall1.makeVisible();
 
+            wall2.changeColor("offwhite");
             wall2.moveHorizontal(-140);
             wall2.moveVertical(20);
             wall2.changeSize(120);
             wall2.makeVisible();
 
-            window.changeColor("black");
+            window.changeColor("amber");
             window.moveHorizontal(-120);
             window.moveVertical(40);
             window.changeSize(40);
             window.makeVisible();
 
+            roof.changeColor("grey");
             roof.changeSize(60, 180);
             roof.moveHorizontal(20);
             roof.moveVertical(-60);
@@ -67,8 +88,8 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        wall1.changeColor("offwhite");
-        wall2.changeColor("offwhite");
+        wall1.changeColor("white");
+        wall2.changeColor("white");
         window.changeColor("white");
         roof.changeColor("black");
         sun.changeColor("black");
@@ -79,7 +100,8 @@ public class Picture
      */
     public void setColor()
     {
-        wall1.changeColor("red");
+        wall1.changeColor("offwhite");
+        wall2.changeColor("offwhite");
         window.changeColor("black");
         roof.changeColor("green");
         sun.changeColor("yellow");
