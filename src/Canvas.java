@@ -127,15 +127,23 @@ public class Canvas
         else if(colorString.equals("green")) {
             graphic.setColor(new Color(80, 160, 60));
         }
-        else if(colorString.equals("grey")) {
-            graphic.setColor(new Color(84, 76, 74));
+        else if(colorString.equals("wood1")) {
+            graphic.setColor(new Color(106, 75, 53));
         }
+        else if(colorString.equals("wood2")) {
+            graphic.setColor(new Color(116, 85, 63));
+        }
+        else if(colorString.equals("grey")) {
+            graphic.setColor(new Color(65, 65, 65));
+        }
+        else if(colorString.equals("offwhite")) {
+            graphic.setColor(new Color(255, 255, 242));
+        }
+
         else if(colorString.equals("amber")) {
             graphic.setColor(new Color(255, 191, 0));
         }
-        else if(colorString.equals("offwhite")) {
-            graphic.setColor(new Color(	250, 249, 246));
-        }
+
         else if(colorString.equals("magenta")) {
             graphic.setColor(Color.magenta);
         }
