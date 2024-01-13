@@ -12,13 +12,17 @@ public class Picture
     private Square windowin6;
     private Square windowin7;
     private Square windowin8;
-
+    private Square door1;
+    private Square door2;
+    private Circle doorknob;
     private Triangle roof1;
     private Triangle roof2;
     private Circle sun;
     private Square sky;
-
-    private Square ground;
+    private Square step;
+    private Square ground1;
+    private Square ground2;
+    private Person mefr;
     private boolean drawn;
 
     /**
@@ -38,11 +42,17 @@ public class Picture
         windowin6 = new Square();
         windowin7 = new Square();
         windowin8 = new Square();
+        door1 = new Square();
+        door2 = new Square();
+        doorknob = new Circle();
         roof1 = new Triangle();
         roof2 = new Triangle();
         sun = new Circle();
         sky = new Square();
-        ground = new Square();
+        step = new Square();
+        ground1 = new Square();
+        ground2 = new Square();
+        mefr = new Person();
 
 
         drawn = false;
@@ -65,6 +75,12 @@ public class Picture
             sky.changeSize(1200);
             sky.makeVisible();
 
+            ground1.changeColor("green");
+            ground1.moveHorizontal(-340);
+            ground1.moveVertical(135);
+            ground1.changeSize(1200);
+            ground1.makeVisible();
+
             wall1.changeColor("offwhite");
             wall1.moveHorizontal(-290);
             wall1.moveVertical(20);
@@ -77,11 +93,23 @@ public class Picture
             wall2.changeSize(180);
             wall2.makeVisible();
 
-            ground.changeColor("grey");
-            ground.moveHorizontal(-340);
-            ground.moveVertical(140);
-            ground.changeSize(1200);
-            ground.makeVisible();
+            step.changeColor("grey");
+            step.moveHorizontal(-84);
+            step.moveVertical(130);
+            step.changeSize(76);
+            step.makeVisible();
+
+            mefr.changeColor("black");
+            mefr.moveHorizontal(40);
+            mefr.moveVertical(27);
+            mefr.changeSize(76,50);
+            mefr.makeVisible();
+
+            ground2.changeColor("green");
+            ground2.moveHorizontal(-340);
+            ground2.moveVertical(150);
+            ground2.changeSize(1200);
+            ground2.makeVisible();
 
             windowback1.changeColor("black");
             windowback1.moveHorizontal(-275);
@@ -142,6 +170,24 @@ public class Picture
             windowin8.moveVertical(48);
             windowin8.changeSize(15);
             windowin8.makeVisible();
+
+            door1.changeColor("wood1");
+            door1.moveHorizontal(-70);
+            door1.moveVertical(45);
+            door1.changeSize(50);
+            door1.makeVisible();
+
+            door2.changeColor("wood1");
+            door2.moveHorizontal(-70);
+            door2.moveVertical(80);
+            door2.changeSize(50);
+            door2.makeVisible();
+
+            doorknob.changeColor("grey");
+            doorknob.moveHorizontal(42);
+            doorknob.moveVertical(111);
+            doorknob.changeSize(10);
+            doorknob.makeVisible();
 
             roof1.changeColor("wood1");
             roof1.changeSize(80, 250);
