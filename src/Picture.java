@@ -96,22 +96,52 @@ public class Picture
             windowback2.makeVisible();
 
             windowin1.changeColor("amber");
-            windowin1.moveHorizontal(-270);
-            windowin1.moveVertical(45);
-            windowin1.changeSize(10);
+            windowin1.moveHorizontal(-272);
+            windowin1.moveVertical(48);
+            windowin1.changeSize(15);
             windowin1.makeVisible();
 
             windowin2.changeColor("amber");
-            windowin2.moveHorizontal(-275);
-            windowin2.moveVertical(45);
-            windowin2.changeSize(10);
+            windowin2.moveHorizontal(-253);
+            windowin2.moveVertical(48);
+            windowin2.changeSize(15);
             windowin2.makeVisible();
 
             windowin3.changeColor("amber");
-            windowin3.moveHorizontal(-275);
-            windowin3.moveVertical(45);
-            windowin3.changeSize(10);
+            windowin3.moveHorizontal(-272);
+            windowin3.moveVertical(67);
+            windowin3.changeSize(15);
             windowin3.makeVisible();
+
+            windowin4.changeColor("amber");
+            windowin4.moveHorizontal(-253);
+            windowin4.moveVertical(67);
+            windowin4.changeSize(15);
+            windowin4.makeVisible();
+
+            windowin5.changeColor("amber");
+            windowin5.moveHorizontal(-197);
+            windowin5.moveVertical(67);
+            windowin5.changeSize(15);
+            windowin5.makeVisible();
+
+            windowin6.changeColor("amber");
+            windowin6.moveHorizontal(-178);
+            windowin6.moveVertical(67);
+            windowin6.changeSize(15);
+            windowin6.makeVisible();
+
+            windowin7.changeColor("amber");
+            windowin7.moveHorizontal(-197);
+            windowin7.moveVertical(48);
+            windowin7.changeSize(15);
+            windowin7.makeVisible();
+
+            windowin8.changeColor("amber");
+            windowin8.moveHorizontal(-178);
+            windowin8.moveVertical(48);
+            windowin8.changeSize(15);
+            windowin8.makeVisible();
 
             roof1.changeColor("wood1");
             roof1.changeSize(80, 250);
